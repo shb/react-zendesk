@@ -5,5 +5,5 @@ export interface IZendeskProps {
   [objKey: string]: any;
 }
 
-declare var ZendeskAPI: (...args: string[]) => {}
+declare var ZendeskAPI: (entity: string, method: string, parameters: any) => {}
 export default class Zendesk extends Component<IZendeskProps> {}
